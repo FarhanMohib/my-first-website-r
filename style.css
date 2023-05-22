@@ -1,0 +1,38 @@
+input:focus {
+  font-weight: 700;
+  color: green;
+  font-size: 20px;
+}
+
+body {
+  counter-reset: section;
+}
+.count p::before {
+  counter-increment: section;
+  content: "No " counter(section) ": ";
+}
+
+.pseudo h3::before {
+  content: "MY ";
+}
+.pseudo h3::after {
+  content: " Farhan Uddin Mohib ";
+}
+.container {
+  background-color: aquamarine;
+}
+div {
+  height: 100px;
+  width: 100px;
+}
+#first {
+  background-color: chocolate;
+}
+#second {
+  background-color: purple;
+  position: absolute;
+  left: 110px;
+}
+#third {
+  background-color: cyan;
+}
